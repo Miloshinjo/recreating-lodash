@@ -12,6 +12,6 @@ test('returns chunked array', () => {
   expect(result).toEqual([[2, 4], [6, 7], ['john']]);
 });
 
-test('does not edit the original array', () => {
+test('does not mutate the original array', () => {
   expect(testArray.length).toBe(5);
 });
