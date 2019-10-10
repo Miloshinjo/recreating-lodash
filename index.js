@@ -2,7 +2,9 @@ import _ from 'lodash';
 
 import concat from './array/concat';
 
-// const testArray = [0, 1, 2, null, '', undefined, 3, false, NaN];
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const name = 'mike';
 
-// console.log('lodash concat', _.concat(testArray));
-// console.log('custom concat', concat(testArray));
+console.log('lodash concat', _.concat(array1, array2, name));
+console.log('custom concat', concat(array1, array2, name));
