@@ -1,7 +1,8 @@
 import _ from 'lodash';
 
-import { numberArray } from './__data__/arrays';
-import chunk from './array/chunk';
+import compact from './array/compact';
 
-console.log('lodash chunk', _.chunk(numberArray, 4));
-console.log('custom chunk', chunk(numberArray, 4));
+const testArray = [0, 1, 2, null, '', undefined, 3, false, NaN];
+
+console.log('lodash compact', _.compact(testArray));
+console.log('custom compact', compact(testArray));
