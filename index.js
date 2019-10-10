@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
-import compact from './array/compact';
+import concat from './array/concat';
 
-const testArray = [0, 1, 2, null, '', undefined, 3, false, NaN];
+// const testArray = [0, 1, 2, null, '', undefined, 3, false, NaN];
 
-console.log('lodash compact', _.compact(testArray));
-console.log('custom compact', compact(testArray));
+// console.log('lodash concat', _.concat(testArray));
+// console.log('custom concat', concat(testArray));
