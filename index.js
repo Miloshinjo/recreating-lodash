@@ -1,7 +1,8 @@
 import _ from 'lodash';
 
-import { numberArray } from './__data__/arrays';
 import chunk from './array/chunk';
 
-console.log('lodash chunk', _.chunk(numberArray, 4));
-console.log('custom chunk', chunk(numberArray, 4));
+export const testArray = [1, 2, 3, 4, 5, 6, 7];
+
+console.log('lodash chunk', _.chunk(testArray, 4));
+console.log('custom chunk', chunk(testArray, 4));
